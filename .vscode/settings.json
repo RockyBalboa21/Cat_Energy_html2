@@ -23,4 +23,8 @@
     "postcss"
   ],
   "prettier.htmlWhitespaceSensitivity": "css",
+  "[less]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "commentTranslate.multiLineMerge": false,
 }
