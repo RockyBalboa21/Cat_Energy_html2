@@ -1,5 +1,53 @@
 .logo {
-  &__image {}
+  &:not(.page-footer__logo) {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    align-items: center;
+    gap: 16px;
 
-  &__sign {}
+    @media (min-width: @breakpoint-medium) {
+      display: block;
+    }
+
+    @media (min-width: @breakpoint-large) {
+      display: block;
+    }
+  }
+
+  &:link:hover {
+    opacity: 0.8;
+  }
+
+  &:link:active {
+    opacity: 0.6;
+  }
+
+  &__image {
+    display: block;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  &__sign {
+    width: 128px;
+    height: 24px;
+    justify-self: center;
+
+    &:not(.page-footer__logo) {
+      @media (min-width: @breakpoint-medium) {
+        display: none;
+      }
+
+      @media (min-width: @breakpoint-large) {
+        display: none;
+      }
+    }
+  }
 }
+

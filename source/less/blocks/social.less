@@ -1,9 +1,35 @@
 .social {
-  &__item {
-    margin: 0 auto;
+  padding: 12px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+
+  @media (min-width: @breakpoint-medium) {
+    padding: 0;
+  }
+}
+
+.social__item {
+  margin: 0 7px;
+  display: flex;
+  align-items: center;
+}
+
+.social__link {
+  display: block;
+  padding: 8px;
+  fill: @color-gray-600;
+
+  &:hover {
+    fill: @color-primary-500;
   }
 
-  &__link {
-    margin: 0 auto;
+  &:active {
+    fill: rgba(@color-primary-500, 0.3);
+  }
+
+  svg {
+    display: block;
   }
 }
