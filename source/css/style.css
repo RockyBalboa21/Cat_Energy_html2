@@ -890,7 +890,7 @@ img {
   left: 7px;
   width: 36px;
   height: 50px;
-  background-image: url("/img/icons/cat-slim.svg");
+  background-image: url("../img/icons/cat-slim.svg");
 }
 @media (min-width: 768px) {
   .catalog-sections__heading--slim::after {
@@ -914,7 +914,7 @@ img {
   left: -10px;
   width: 67px;
   height: 28px;
-  background-image: url("/img/icons/cat-pro.svg");
+  background-image: url("../img/icons/cat-pro.svg");
 }
 @media (min-width: 768px) {
   .catalog-sections__heading--pro::after {
@@ -975,11 +975,11 @@ img {
   height: 10px;
   background-repeat: no-repeat;
   background-position: 100% 50%;
-  background-image: url("/img/icons/icon_arrow.svg");
+  background-image: url("../img/icons/icon_arrow.svg");
 }
 .catalog-sections__link:hover::after {
   width: 32px;
-  background-image: url("/img/icons/icon_arrow_large.svg");
+  background-image: url("../img/icons/icon_arrow_large.svg");
   background-repeat: no-repeat;
   background-position: 100% 50%;
 }
@@ -1162,7 +1162,7 @@ img {
 .control--checkbox .control__input:checked + .control__data::after {
   background-repeat: no-repeat;
   background-position: calc(50% + 1px) 50%;
-  background-image: url("/img/icons/check.svg");
+  background-image: url("../img/icons/check.svg");
 }
 @media (min-width: 768px) {
   .control--checkbox .control__input:checked + .control__data::after {
@@ -1674,7 +1674,7 @@ img {
   background-repeat: no-repeat;
   background-size: auto, cover;
   background-position: 50% 58px, 50% 50%;
-  background-image: url("/img/icons/icon_gift.svg"), url("/img/background/catbag.jpg");
+  background-image: url("../img/icons/icon_gift.svg"), url("../img/background/catbag.jpg");
   font-size: 16px;
   text-align: center;
   line-height: 20px;
@@ -1851,7 +1851,7 @@ img {
   background-color: transparent;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url("/img/icons/burger.svg");
+  background-image: url("../img/icons/burger.svg");
   border: none;
 }
 @media (max-width: 767px) {
@@ -1860,7 +1860,7 @@ img {
   }
   .page-header__nav--opened .page-header__toggler {
     display: block;
-    background-image: url("/img/icons/close.svg");
+    background-image: url("../img/icons/close.svg");
   }
 }
 @media (min-width: 768px) {
@@ -1963,16 +1963,16 @@ img {
   }
 }
 .process__item--leaf::before {
-  background-image: url("/img/icons/icon_leaf.svg");
+  background-image: url("../img/icons/icon_leaf.svg");
 }
 .process__item--powder::before {
-  background-image: url("/img/icons/icon_tub.svg");
+  background-image: url("../img/icons/icon_tub.svg");
 }
 .process__item--meal::before {
-  background-image: url("/img/icons/icon_eat.svg");
+  background-image: url("../img/icons/icon_eat.svg");
 }
 .process__item--weight::before {
-  background-image: url("/img/icons/icon_alarm.svg");
+  background-image: url("../img/icons/icon_alarm.svg");
 }
 .promo {
   text-align: center;
@@ -1983,7 +1983,7 @@ img {
     background-color: #63a63b;
     background-repeat: no-repeat;
     background-position: 50% 0;
-    background-image: url("/img/background/promo_mobile_background.jpg"), linear-gradient(#63a63b 0, #63a63b 302px, #ffffff 302px);
+    background-image: url("../img/background/promo_mobile_background.jpg"), linear-gradient(#63a63b 0, #63a63b 302px, #ffffff 302px);
   }
 }
 @media (min-width: 768px) {
@@ -2008,7 +2008,7 @@ img {
     background-color: #63a63b;
     background-position: -1px 100%;
     background-repeat: no-repeat;
-    background-image: url("/img/background/promo_desktop_background.jpg");
+    background-image: url("../img/background/promo_desktop_background.jpg");
   }
 }
 @media (min-width: 768px) {
@@ -2085,7 +2085,7 @@ img {
   text-align: center;
   background-repeat: no-repeat;
   background-position: 50% 25px;
-  background-image: url("/img/icons/icon_plus.svg");
+  background-image: url("../img/icons/icon_plus.svg");
 }
 @media (min-width: 768px) {
   .show-more {
@@ -2093,7 +2093,7 @@ img {
     display: flex;
     flex-direction: column;
     background-position: 50% 52px;
-    background-image: url("/img/icons/icon_plus-large.svg");
+    background-image: url("../img/icons/icon_plus-large.svg");
     border: 1px solid #f2f2f2;
   }
 }
