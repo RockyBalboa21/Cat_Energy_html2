@@ -167,7 +167,7 @@
 
   @media (min-width: @breakpoint-medium) {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 1fr;
     padding: 0 58px;
     overflow: hidden;
   }
@@ -179,14 +179,10 @@
 }
 
 .example__image {
-  width: 280px;
-  height: 232px;
   display: none;
 
   @media (min-width: @breakpoint-medium) {
     display: flex;
-    width: 592px;
-    flex-shrink: 0;
     overflow: hidden;
 
     img {
