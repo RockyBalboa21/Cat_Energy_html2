@@ -1567,7 +1567,8 @@ img {
 .field__icon {
   position: absolute;
   right: 8px;
-  top: calc(50% - 12px);
+  top: calc(50% - 8px);
+  stroke: #222222;
 }
 @media (min-width: 768px) {
   .field__icon {
@@ -1575,10 +1576,10 @@ img {
   }
 }
 .field__input:focus + .field__icon {
-  color: #68b738;
+  stroke: #68b738;
 }
 .field__input:not(:placeholder-shown):invalid + .field__icon {
-  color: #ff8282;
+  stroke: #ff8282;
 }
 .form {
   overflow: hidden;
@@ -1621,12 +1622,18 @@ img {
 .form__group--target {
   margin-right: -21px;
   margin-left: -21px;
-  border: 1px solid #d9d9d9;
+}
+@media (max-width: 767px) {
+  .form__group--target {
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+  }
 }
 @media (min-width: 768px) {
   .form__group--target {
     margin-right: 0;
     margin-left: 0;
+    border: 1px solid #d9d9d9;
   }
 }
 .form__footer {
@@ -1761,6 +1768,11 @@ img {
     margin-bottom: 66px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .page-header {
+    border-bottom: 1px solid #d9d9d9;
   }
 }
 @media (max-width: 767px) {

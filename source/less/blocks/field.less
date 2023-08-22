@@ -66,17 +66,18 @@
 .field__icon {
   position: absolute;
   right: 8px;
-  top: calc(50% - 12px);
+  top: calc(50% - 8px);
+  stroke: @color-gray-850;
 
   @media (min-width: @breakpoint-medium) {
     right: 14px;
   }
 
   .field__input:focus + & {
-    color: @color-primary-500;
+    stroke: @color-primary-500;
   }
 
   .field__input:not(:placeholder-shown):invalid + & {
-    color: @color-error-500;
+    stroke: @color-error-500;
   }
 }
