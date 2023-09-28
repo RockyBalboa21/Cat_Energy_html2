@@ -1,4 +1,30 @@
 {
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "liveServer.settings.port": 5501
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "files.autoSave": "afterDelay",
+  "editor.defaultFormatter": null,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "scss.format.enable": true,
+  "less.format.enable": true,
+  "css.format.enable": true,
+  "typescript.format.enable": true,
+  "javascript.format.enable": true,
+  "json.format.enable": true,
+  "html.format.enable": true,
+  "json.format.keepLines": true,
+  "notebook.formatOnSave.enabled": true,
+  "stylelint.snippet": [
+    "less",
+    "postcss"
+  ],
+  "stylelint.validate": [
+    "less",
+    "postcss"
+  ],
+  "prettier.htmlWhitespaceSensitivity": "css",
+  "[less]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "commentTranslate.multiLineMerge": false,
 }
