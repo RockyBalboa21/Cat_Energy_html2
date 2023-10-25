@@ -22,7 +22,7 @@
           <a class="page-header__logo logo" href="index.html">
             <picture>
               <source class="logo__image" srcset="img/logo-image.svg" width="34" height="38" media="(max-width: 767px)">
-              <source class="logo__image" srcset="img/logo-tablet.svg" width="174" height="52" media="( max-width: 1219px)">
+              <source class="logo__image" srcset="img/logo-tablet.svg" width="174" height="52" media="(max-width: 1219px)">
               <source class="logo__image" srcset="img/logo-desktop.svg" width="203" height="59" media="(min-width: 1220px)">
               <img class="logo__image" srcset="img/logo-image.svg" alt="Логотип Cat Energy.">
             </picture>
@@ -54,7 +54,11 @@
         <div class="promo__container container">
           <h1 class="promo__heading">Функциональное питание для котов</h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <img class="promo__image"  src="img/index-can-mobile.png" width="280" height="270" alt="Баночка с кормом Cat Energy с курицей, 500 грамм.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
+            <img class="promo__image"  src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x"  width="280" height="270" alt="Баночка с кормом Cat Energy с курицей, 500 грамм.">
+          </picture>
           <a class="promo__button button"  href="form.html">Подобрать программу</a>
         </div>
       </header>
@@ -121,10 +125,16 @@
           <div class="example__view">
             <div class="example__images">
               <div class="example__image example__image--before example__image--active">
-                <img src="img/cat-fat.png" width="280" height="232" alt="Кот до употребления корма: выглядит ленивым, толстым и страшным.">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/cat-fat-before-tablet.png 1x, img/cat-fat-before-tablet@2x.png 2x">
+                  <img src="img/cat-fat-before-mobile.png" srcset="img/cat-fat-before-mobile@2x.png 2x" width="280" height="232" alt="Кот до употребления корма: выглядит ленивым, толстым и страшным.">
+                </picture>
               </div>
               <div class="example__image example__image--after">
-                <img src="img/cat-skinny.png" width="280" height="232"alt="Кот после употребления корма: выглядит молодым, худым и бодрым.">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/cat-skinny-after-tablet.png 1x, img/cat-skinny-after-tablet@2x.png 2x">
+                  <img src="img/cat-skinny-after-mobile.png" srcset="img/cat-skinny-after-mobile@2x.png 2x" width="280" height="232"alt="Кот после употребления корма: выглядит молодым, худым и бодрым.">
+                </picture>
               </div>
             </div>
 

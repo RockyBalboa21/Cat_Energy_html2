@@ -27,4 +27,5 @@
     "editor.defaultFormatter": "vscode.css-language-features"
   },
   "commentTranslate.multiLineMerge": false,
+  "liveServer.settings.port": 5501,
 }

@@ -16,19 +16,18 @@
     margin: 0 auto;
     padding: 24px 0;
     display: grid;
-    grid-template-columns: 174px 1fr;
+    grid-template-columns: max-content 1fr;
     gap: 16px;
   }
 
   @media (min-width: @breakpoint-large) {
-    padding: 53px 0;
     width: 1220px;
   }
 }
 
 .page-header__nav--main {
   @media (min-width: @breakpoint-large) {
-    grid-template-columns: 203px 50%;
+    grid-template-columns: max-content 50%;
     justify-content: space-between;
   }
 }

@@ -1,4 +1,5 @@
 .promo {
+  padding-top: 27px;
   text-align: center;
 
   @media (max-width: @breakpoint-small-down) {
@@ -9,6 +10,13 @@
     background-image:
       url("../img/background/promo_mobile_background.jpg"),
       linear-gradient(@color-primary-800 0, @color-primary-800 302px, @color-white 302px);
+
+    @media (min-resolution: 2dppx) {
+      background-size: auto 302px, auto;
+      background-image:
+        url("../img/background/promo_mobile_background@2x.jpg"),
+        linear-gradient(@color-primary-800 0, @color-primary-800 302px, @color-white 302px);
+    }
   }
 
   @media (min-width: @breakpoint-medium) {
@@ -32,6 +40,11 @@
       background-position: -1px 100%;
       background-repeat: no-repeat;
       background-image: url("../img/background/promo_desktop_background.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-size: auto 696px;
+        background-image: url("../img/background/promo_desktop_background@2x.jpg");
+      }
     }
   }
 }
