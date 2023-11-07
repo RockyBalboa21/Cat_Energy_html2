@@ -1188,14 +1188,14 @@ img {
   font-size: 16px;
   text-decoration: none;
 }
-.developer:hover .developer__image svg {
-  fill: #68b738;
+.developer:hover .developer__image {
+  color: #68b738;
 }
 .developer:active {
   opacity: 0.3;
 }
-.developer:active .developer__image svg {
-  fill: #68b738;
+.developer:active .developer__image {
+  color: #68b738;
 }
 .example {
   padding: 25px 0 40px;
@@ -1569,8 +1569,7 @@ img {
 .field__icon {
   position: absolute;
   right: 8px;
-  top: calc(50% - 8px);
-  stroke: #222222;
+  top: calc(50% - 10px);
 }
 @media (min-width: 768px) {
   .field__icon {
@@ -1578,10 +1577,10 @@ img {
   }
 }
 .field__input:focus + .field__icon {
-  stroke: #68b738;
+  color: #68b738;
 }
 .field__input:not(:placeholder-shown):invalid + .field__icon {
-  stroke: #ff8282;
+  color: #ff8282;
 }
 .form {
   overflow: hidden;
@@ -2188,6 +2187,7 @@ img {
   .site-menu {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     font-size: 18px;
   }
 }
@@ -2404,13 +2404,13 @@ img {
 .social__link {
   display: block;
   padding: 8px;
-  fill: #666666;
+  color: #666666;
 }
 .social__link:hover {
-  fill: #68b738;
+  color: #68b738;
 }
 .social__link:active {
-  fill: rgba(104, 183, 56, 0.3);
+  color: rgba(104, 183, 56, 0.3);
 }
 .social__link svg {
   display: block;
