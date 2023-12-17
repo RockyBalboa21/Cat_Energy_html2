@@ -11,7 +11,7 @@
 }
 
 .social__item {
-  margin: 0 7px;
+  margin: 0 4px;
   display: flex;
   align-items: center;
 }
@@ -31,5 +31,30 @@
 
   svg {
     display: block;
+  }
+
+  @media (max-width: @breakpoint-small-down) {
+    padding: 8px 13px;
+  }
+}
+
+.social-vk svg {
+  @media (max-width: @breakpoint-small-down) {
+    width: 23px;
+    height: 16px;
+  }
+}
+
+.social-insta svg {
+  @media (max-width: @breakpoint-small-down) {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.social-facebook svg {
+  @media (max-width: @breakpoint-small-down) {
+    width: 22px;
+    height: 22px;
   }
 }

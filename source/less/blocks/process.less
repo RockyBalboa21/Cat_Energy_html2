@@ -1,11 +1,21 @@
 .process {
-  padding: 20px;
+  padding-top: 20px;
   padding-bottom: 49px;
+
+  @media (min-width: @breakpoint-medium) {
+    padding-top: 46px;
+    padding-bottom: 22px;
+  }
+
+  @media (min-width: @breakpoint-large) {
+    padding-top: 71px;
+  }
 }
 
 .process__list {
   margin: 0;
   padding: 0;
+  padding-top: 3px;
   color: @color-gray-700;
   list-style: none;
 
@@ -19,6 +29,7 @@
 
   @media (min-width: @breakpoint-large) {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
   }
 }
 
@@ -31,11 +42,17 @@
     position: relative;
     z-index: 0;
     min-height: 280px;
-    padding-top: 40px;
+    padding-top: 15px;
     padding-right: 72px;
     grid-template-columns: auto;
     grid-template-rows: 80px auto;
+    gap: 32px;
     counter-increment: process;
+  }
+
+  @media (min-width: @breakpoint-large) {
+    padding-top: 15px;
+    padding-right: 0;
   }
 
   & + & {
@@ -65,13 +82,20 @@
     @media (min-width: @breakpoint-medium) {
       content: counter(process);
       position: absolute;
-      top: 0;
-      right: 80px;
+      top: -25px;
+      right: 72px;
       z-index: -1;
+      min-width: 150px;
       color: @color-gray-50;
       font-family: @font-heading;
       font-size: 280px;
+      text-align: center;
       line-height: 1;
+    }
+
+    @media (min-width: @breakpoint-large) {
+      top: -24px;
+      right: -6px;
     }
   }
 }

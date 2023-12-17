@@ -18,11 +18,13 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    font-weight: 400;
     font-size: 18px;
   }
 
   @media (min-width: @breakpoint-large) {
     font-size: 20px;
+    font-weight: 400;
   }
 }
 
@@ -39,9 +41,9 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 4px;
-      right: 17px;
-      left: 17px;
+      bottom: 9px;
+      right: 18px;
+      left: 18px;
       height: 2px;
       background-color: @color-primary-500;
     }
@@ -60,13 +62,13 @@
 
 .site-menu__link {
   display: block;
-  padding: 22px 22px 23px;
+  padding: 23px 22px 22px;
   color: @color-black;
   text-decoration: none;
 
 
   @media (min-width: @breakpoint-medium) {
-    padding: 17px;
+    padding: 21px 18px;
   }
 
   &:link:hover {
@@ -75,6 +77,10 @@
 
   &:link:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: @breakpoint-large) {
+    padding: 21px 16px 21px 17px;
   }
 }
 

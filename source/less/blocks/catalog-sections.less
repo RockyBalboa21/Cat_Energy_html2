@@ -1,6 +1,10 @@
 .catalog-sections {
   padding-top: 20px;
 
+  @media (min-width: @breakpoint-medium) {
+    padding: 0;
+  }
+
   @media (min-width: @breakpoint-large) {
     padding-top: 82px;
   }
@@ -16,15 +20,15 @@
 
 .catalog-sections__item {
   position: relative;
-  padding: 24px 20px 20px;
+  padding: 22px 20px 18px;
   background-color: @color-gray-50;
 
   @media (min-width: @breakpoint-medium) {
-    padding: 77px 316px 52px 52px;
+    padding: 69px 316px 60px 52px;
   }
 
   @media (min-width: @breakpoint-large) {
-    padding: 47px 52px 55px;
+    padding: 47px 52px 62px;
   }
 
   & + & {
@@ -45,7 +49,7 @@
   min-height: 50px;
   margin: 0;
   margin-bottom: 22px;
-  padding-left: 68px;
+  padding-left: 72px;
   display: flex;
   align-items: center;
   font-family: @font-heading;
@@ -57,6 +61,7 @@
   @media (min-width: @breakpoint-medium) {
     position: static;
     padding-left: 0;
+    margin-bottom: 18px;
     font-size: 36px;
   }
 
@@ -76,16 +81,16 @@
   &::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 2px;
+    top: 1px;
     width: 50px;
     height: 50px;
     background-color: @color-primary-500;
     border-radius: 50%;
 
     @media (min-width: @breakpoint-medium) {
-      top: calc(50% - 100px);
-      right: 62px;
+      top: calc(50% - 95px);
+      right: 61px;
       left: auto;
       width: 200px;
       height: 200px;
@@ -107,14 +112,14 @@
 
 .catalog-sections__heading--slim {
   &::after {
-    top: -3px;
-    left: 7px;
+    top: -2px;
+    left: 9px;
     width: 36px;
     height: 50px;
     background-image: url("../img/icons/cat-slim.svg");
 
     @media (min-width: @breakpoint-medium) {
-      top: calc(50% - 110px);
+      top: calc(50% - 106px);
       right: 92px;
       left: auto;
       width: 140px;
@@ -122,7 +127,7 @@
     }
 
     @media (min-width: @breakpoint-large) {
-      top: calc(50% - 54px);
+      top: calc(50% - 56px);
       left: 15px;
       width: 70px;
       height: 97px;
@@ -132,14 +137,14 @@
 
 .catalog-sections__heading--pro {
   &::after {
-    top: 11px;
-    left: -10px;
+    top: 13px;
+    left: -7px;
     width: 67px;
     height: 28px;
     background-image: url("../img/icons/cat-pro.svg");
 
     @media (min-width: @breakpoint-medium) {
-      top: calc(50% - 56px);
+      top: calc(50% - 51px);
       right: 28px;
       left: auto;
       width: 268px;
@@ -147,7 +152,7 @@
     }
 
     @media (min-width: @breakpoint-large) {
-      top: calc(50% - 22px);
+      top: calc(50% - 30px);
       left: -19px;
       width: 134px;
       height: 56px;
@@ -163,12 +168,14 @@
   border-bottom: 1px solid @color-gray-200;
 
   @media (min-width: @breakpoint-medium) {
-    margin-bottom: 48px;
+    margin-bottom: 54px;
+    padding: 0;
     border: none;
   }
 
   @media (min-width: @breakpoint-large) {
-    margin-bottom: 23px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -176,7 +183,7 @@
   display: grid;
   grid-template-columns: max-content 32px;
   align-items: center;
-  gap: 17px;
+  gap: 16px;
   color: @color-black;
   font-family: @font-heading;
   font-size: 16px;
@@ -187,6 +194,11 @@
 
   @media (min-width: @breakpoint-medium) {
     font-size: 20px;
+    gap: 25px;
+  }
+
+  @media (min-width: @breakpoint-large) {
+    gap: 27px;
   }
 
   &::after {

@@ -5,6 +5,7 @@
 
 .field-group--target {
   padding: 21px;
+  padding-bottom: 17px;
 
   @media (min-width: @breakpoint-medium) {
     padding: 25px;
@@ -34,18 +35,23 @@
   span {
     position: relative;
     z-index: 1;
-    width: content;
+    width: min-content;
     margin-left: -22px;
     padding: 0 22px;
     background-color: @color-white;
   }
 
   @media (min-width: @breakpoint-medium) {
+    margin-bottom: 75px;
     font-size: 36px;
     line-height: 36px;
 
     &::before {
       margin-top: 22px;
+    }
+
+    .field-group--additional & {
+      margin-bottom: 57px;
     }
 
     span {
@@ -63,7 +69,6 @@
 .field-group__field {
   clear: both;
   width: 100%;
-  border: 1px solid @color-gray-170;
 }
 
 .field-group__list {
@@ -85,12 +90,13 @@
   @media (min-width: @breakpoint-medium) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
+    column-gap: 60px;
     row-gap: 32px;
   }
 
   @media (min-width: @breakpoint-large) {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
   }
 }
 
@@ -114,6 +120,12 @@
       .field-group__list--contacts & {
         margin-top: 0;
       }
+    }
+  }
+
+  @media (max-width: @breakpoint-small-down) {
+    .field-group__list--additional & + & {
+      margin-top: 12px;
     }
   }
 }

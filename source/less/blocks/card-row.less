@@ -1,19 +1,19 @@
 .card-row {
-  padding: 13px 0 19px;
+  padding: 13px 0 18px;
 
   @media (min-width: @breakpoint-medium) {
-    padding: 26px 38px 28px;
+    padding: 25px 38px 28px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 16px;
-    row-gap: 20px;
+    row-gap: 27px;
   }
 
   @media (min-width: @breakpoint-large) {
-    align-items: center;
+    align-items: baseline;
     grid-template-columns: 1fr 80px 1fr 80px 1fr;
     column-gap: 0;
-    padding: 13px 0;
+    padding: 13px 0 18px;
   }
 }
 
@@ -45,6 +45,7 @@
   @media (min-width: @breakpoint-medium) {
     margin-bottom: 0;
     grid-template-columns: 1fr 82px;
+    align-items: end;
   }
 
   @media (min-width: @breakpoint-large) {
@@ -71,6 +72,10 @@
       text-align: left;
     }
   }
+}
+
+.card-row__definition--price {
+  text-transform: uppercase;
 }
 
 .card-row__button {
