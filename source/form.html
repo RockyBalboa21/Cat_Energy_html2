@@ -66,19 +66,19 @@
               <li class="field-group__item">
                 <label class="field">
                   <span class="field__lead">Имя:*</span>
-                  <input class="field__input" name="cat-name" type="text" placeholder="Барсик" pattern="[А-Яа-яЁё\s]+$" required>
+                  <input class="field__input" name="cat-name" type="text" placeholder="Барсик" pattern="[А-Яа-яЁё\s]+$" title="Допустима только кириллица" required>
                 </label>
               </li>
               <li class="field-group__item">
                 <label class="field">
                   <span class="field__lead">Вес (кг):*</span>
-                  <input class="field__input" name="cat-weight" type="text" placeholder="7" required>
+                  <input class="field__input" name="cat-weight" type="text" placeholder="7" pattern="([1-9]|1[0-9]|20)" title="Допустимы только цифры до 20" required>
                 </label>
               </li>
               <li class="field-group__item">
                 <label class="field">
                   <span class="field__lead">Возраст (лет):</span>
-                  <input class="field__input" name="cat-age" type="text" placeholder="7">
+                  <input class="field__input" name="cat-age" type="text" placeholder="7" pattern="([1-9]|1[0-9]|20)" title="Допустимы только цифры до 20">
                 </label>
               </li>
             </ul>
@@ -118,7 +118,7 @@
               <li class="field-group__item">
                 <label class="field field--icon">
                   <span class="field__lead">E-mail:*</span>
-                  <input class="field__input" name="e-mail" type="email" title="kuklachev@gmail.com" placeholder="kuklachev@gmail.com" required>
+                  <input class="field__input" name="e-mail" type="email" title="kuklachev@gmail.com" placeholder="kuklachev@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                   <svg class="field__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
                     <use xlink:href="./img/sprite.svg#icon_email_new"></use>
                   </svg>
@@ -192,7 +192,7 @@
         <h2 class="visually-hidden">Контакты</h2>
 
         <div class="contacts__container container">
-          <p class="contacts__heading">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__heading">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <p class="contacts__address">
             <span>ул. Большая Конюшенная, д. 19/8</span>
             <span>Санкт-Петербург</span>
@@ -216,7 +216,7 @@
         </a>
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link social-vk" href="#">
               <span class="visually-hidden">vkontakte</span>
               <svg width="30" height="22">
                 <use xlink:href="./img/sprite.svg#icon_vkontakte"></use>
@@ -224,7 +224,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link social-insta" href="#">
               <span class="visually-hidden">instagram</span>
               <svg width="23" height="23" viewBox="0 0 23 23">
                 <use xlink:href="./img/sprite.svg#icon_instagram"></use>
@@ -232,7 +232,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
+            <a class="social__link social-facebook" href="#">
               <span class="visually-hidden">facebook</span>
               <svg width="28" height="33" viewBox="0 0 28 33">
                 <use xlink:href="./img/sprite.svg#icon_facebook"></use>

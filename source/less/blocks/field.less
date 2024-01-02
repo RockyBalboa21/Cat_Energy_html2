@@ -17,6 +17,20 @@
   }
 }
 
+.field--icon {
+  gap: 11px;
+
+  @media (min-width: @breakpoint-medium) {
+    gap: 14px;
+  }
+}
+
+.field-group__item:nth-child(odd) .field--icon:first-child {
+  @media (min-width: @breakpoint-medium) {
+    gap: 20px;
+  }
+}
+
 .field__input {
   min-width: 100px;
   padding: 9px 14px;
@@ -27,22 +41,53 @@
   line-height: 16px;
   text-transform: uppercase;
 
+  @media (min-width: @breakpoint-medium) {
+    margin-right: -3px;
+  }
+
   &:hover {
-    border-color: @color-gray-180;
+    // border-color: @color-error-500;
+    // проверил работает - имя вес возвраст, а также e-mail и телефон
+    // по макету цвет @color-gray-250: #cdcdcd;
+    border-color: @color-gray-250;
   }
 
   &:focus {
+    // outline: 2px solid @color-error-500;
+    // проверил работает - имя вес возвраст, а также e-mail и телефон
+    // по макету цвет @color-gray-700: #444444;
     outline: 2px solid @color-gray-700;
     outline-offset: -2px;
   }
 
+  // &:invalid {
+  //   background-image: linear-gradient(to right, @color-white, @color-error-500, @color-primary-500);
+  //   outline: 2px solid @color-error-500;
+  //   outline-offset: -2px;
+  // }
+  // Этот код не работает как нужно, если убрать required у input всё прекрасно срабатывает по проверке pattern, но форма тогда может быть отправлена без обязательных полей, а это не верно.
   &:not(:placeholder-shown):invalid {
     outline: 2px solid @color-error-500;
     outline-offset: -2px;
   }
+  // Этот код не работает как нужно
 
   &::placeholder {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 18px;
     opacity: 1;
+
+    @media (min-width: @breakpoint-medium) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @media (min-width: @breakpoint-large) {
+      padding-top: 4px;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   .field--no-label & {
@@ -65,20 +110,24 @@
 }
 
 .field__input--textarea {
+  min-height: 154px;
+  padding-top: 12px;
   padding-bottom: 18px;
 
   @media (min-width: @breakpoint-medium) {
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: @breakpoint-large) {
-    padding-bottom: 21px;
+    padding-top: 7px;
+    padding-bottom: 19px;
   }
 }
 
 .field__icon {
   position: absolute;
-  right: 8px;
+  right: 11px;
   top: calc(50% - 12px);
 
 
@@ -90,7 +139,12 @@
     color: @color-primary-500;
   }
 
+  // .field__input:invalid + & {
+  //   color: @color-error-500;
+  // }
+  // Этот код не работает как нужно, если убрать required у input всё прекрасно срабатывает по проверке pattern, но форма тогда может быть отправлена без обязательных полей, а это не верно.
   .field__input:not(:placeholder-shown):invalid + & {
     color: @color-error-500;
   }
+  // Этот код не работает как нужно
 }

@@ -179,7 +179,7 @@
 }
 
 .example__images {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 
   @media (min-width: @breakpoint-medium) {
     display: grid;
@@ -197,10 +197,6 @@
 
 .example__image {
   display: none;
-
-  img {
-    margin-left: -14px;
-  }
 
   @media (min-width: @breakpoint-medium) {
     display: flex;
@@ -230,4 +226,13 @@
 
 .example__image--active {
   display: block;
+}
+
+.example__image--mobile {
+  margin: 10px 0 0 19px;
+
+  @media (min-width: @breakpoint-medium) {
+    margin: 0;
+    margin-left: -100%;
+  }
 }

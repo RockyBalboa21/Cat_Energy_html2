@@ -1,12 +1,13 @@
 .form {
   overflow: hidden;
+  padding-top: 4px;
 
   @media (min-width: @breakpoint-medium) {
     padding-top: 28px;
   }
 
   @media (min-width: @breakpoint-large) {
-    padding-top: 26px;
+    padding-top: 28px;
   }
 }
 
@@ -33,9 +34,23 @@
 
     @media (min-width: @breakpoint-medium) {
       margin-top: 71px;
+
+      &.form__group--comment {
+        margin-top: 66px;
+      }
+
+      &.form__group--target {
+        margin-top: 70px;
+      }
     }
 
     @media (min-width: @breakpoint-large) {
+      margin-top: 65px;
+
+      &.form__group--comment {
+        margin-top: 67px;
+      }
+
       &.form__group--target {
         margin-top: 0;
       }
@@ -76,12 +91,12 @@
 }
 
 .form__footer {
-  margin-top: 34px;
-  padding-bottom: 32px;
+  margin-top: 36px;
+  padding-bottom: 31px;
   text-align: center;
 
   @media (min-width: @breakpoint-medium) {
-    margin-top: 51px;
+    margin-top: 53px;
     padding-bottom: 72px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -92,7 +107,7 @@
 
   @media (min-width: @breakpoint-large) {
     margin-top: 59px;
-    padding-bottom: 82px;
+    margin-bottom: 14px;
     gap: 80px;
     grid-column: 1 / -1;
   }

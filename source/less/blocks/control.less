@@ -55,7 +55,12 @@
   }
 
   &:hover::before {
-    border-color: @color-gray-300;
+    border-color: @color-gray-850;
+  }
+
+  .control__input:hover + &::before {
+    outline: 2px solid @color-gray-300;
+    outline-offset: -2px;
   }
 
   .control__input:focus + &::before {

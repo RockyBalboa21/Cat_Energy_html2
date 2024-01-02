@@ -54,6 +54,16 @@
       }
     }
   }
+
+  @media (min-width: @breakpoint-large) {
+    &:not(:last-child) {
+      margin-bottom: 54px;
+
+      .page-main__header & {
+        margin-bottom: 56px;
+      }
+    }
+  }
 }
 
 .page-main__subheading {
