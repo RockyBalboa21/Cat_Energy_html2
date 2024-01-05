@@ -575,10 +575,12 @@ img {
     padding: 0 5px;
   }
 }
+.card__picture,
 .card__img {
   grid-area: img;
   align-self: center;
   justify-self: center;
+  width: auto;
 }
 .card__list {
   margin: 0;
@@ -1186,14 +1188,14 @@ img {
   font-size: 16px;
   text-decoration: none;
 }
-.developer:hover .developer__image svg {
-  fill: #68b738;
+.developer:hover .developer__image {
+  color: #68b738;
 }
 .developer:active {
   opacity: 0.3;
 }
-.developer:active .developer__image svg {
-  fill: #68b738;
+.developer:active .developer__image {
+  color: #68b738;
 }
 .example {
   padding: 25px 0 40px;
@@ -1567,8 +1569,7 @@ img {
 .field__icon {
   position: absolute;
   right: 8px;
-  top: calc(50% - 8px);
-  stroke: #222222;
+  top: calc(50% - 10px);
 }
 @media (min-width: 768px) {
   .field__icon {
@@ -1576,10 +1577,10 @@ img {
   }
 }
 .field__input:focus + .field__icon {
-  stroke: #68b738;
+  color: #68b738;
 }
 .field__input:not(:placeholder-shown):invalid + .field__icon {
-  stroke: #ff8282;
+  color: #ff8282;
 }
 .form {
   overflow: hidden;
@@ -1680,11 +1681,22 @@ img {
   text-align: center;
   line-height: 20px;
 }
+@media (min-resolution: 2dppx) {
+  .offer {
+    background-image: url("../img/icons/icon_gift.svg"), url("../img/background/catbag@2x.jpg");
+  }
+}
 @media (min-width: 768px) {
   .offer {
     padding: 70px 120px 70px 422px;
     background-position: 77px 50%, 50% 50%;
     text-align: left;
+    background-image: url("../img/icons/icon_gift.svg"), url("../img/background/catbag-tablet.jpg");
+  }
+}
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .offer {
+    background-image: url("../img/icons/icon_gift.svg"), url("../img/background/catbag-tablet@2x.jpg");
   }
 }
 @media (min-width: 1300px) {
@@ -1692,6 +1704,12 @@ img {
     padding: 178px 40px 48px;
     background-position: 50% 50px, 50% 50%;
     text-align: center;
+    background-image: url("../img/icons/icon_gift.svg"), url("../img/background/catbag-desktop.jpg");
+  }
+}
+@media (min-width: 1300px) and (min-resolution: 2dppx) {
+  .offer {
+    background-image: url("../img/icons/icon_gift.svg"), url("../img/background/catbag-desktop@2x.jpg");
   }
 }
 .offer__text {
@@ -1786,19 +1804,18 @@ img {
     margin: 0 auto;
     padding: 24px 0;
     display: grid;
-    grid-template-columns: 174px 1fr;
+    grid-template-columns: max-content 1fr;
     gap: 16px;
   }
 }
 @media (min-width: 1300px) {
   .page-header__nav {
-    padding: 53px 0;
     width: 1220px;
   }
 }
 @media (min-width: 1300px) {
   .page-header__nav--main {
-    grid-template-columns: 203px 50%;
+    grid-template-columns: max-content 50%;
     justify-content: space-between;
   }
 }
@@ -1979,6 +1996,7 @@ img {
   background-image: url("../img/icons/icon_alarm.svg");
 }
 .promo {
+  padding-top: 27px;
   text-align: center;
 }
 @media (max-width: 767px) {
@@ -1988,6 +2006,12 @@ img {
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-image: url("../img/background/promo_mobile_background.jpg"), linear-gradient(#63a63b 0, #63a63b 302px, #ffffff 302px);
+  }
+}
+@media (max-width: 767px) and (min-resolution: 2dppx) {
+  .promo {
+    background-size: auto 302px, auto;
+    background-image: url("../img/background/promo_mobile_background@2x.jpg"), linear-gradient(#63a63b 0, #63a63b 302px, #ffffff 302px);
   }
 }
 @media (min-width: 768px) {
@@ -2013,6 +2037,12 @@ img {
     background-position: -1px 100%;
     background-repeat: no-repeat;
     background-image: url("../img/background/promo_desktop_background.jpg");
+  }
+}
+@media (min-width: 1300px) and (min-resolution: 2dppx) {
+  .promo::after {
+    background-size: auto 696px;
+    background-image: url("../img/background/promo_desktop_background@2x.jpg");
   }
 }
 @media (min-width: 768px) {
@@ -2157,6 +2187,7 @@ img {
   .site-menu {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     font-size: 18px;
   }
 }
@@ -2373,13 +2404,13 @@ img {
 .social__link {
   display: block;
   padding: 8px;
-  fill: #666666;
+  color: #666666;
 }
 .social__link:hover {
-  fill: #68b738;
+  color: #68b738;
 }
 .social__link:active {
-  fill: rgba(104, 183, 56, 0.3);
+  color: rgba(104, 183, 56, 0.3);
 }
 .social__link svg {
   display: block;

@@ -1,4 +1,5 @@
 .promo {
+  padding-top: 27px;
   text-align: center;
 
   @media (max-width: @breakpoint-small-down) {
@@ -9,9 +10,17 @@
     background-image:
       url("../img/background/promo_mobile_background.jpg"),
       linear-gradient(@color-primary-800 0, @color-primary-800 302px, @color-white 302px);
+
+    @media (min-resolution: 2dppx) {
+      background-size: auto 302px, auto;
+      background-image:
+        url("../img/background/promo_mobile_background@2x.jpg"),
+        linear-gradient(@color-primary-800 0, @color-primary-800 302px, @color-white 302px);
+    }
   }
 
   @media (min-width: @breakpoint-medium) {
+    padding-top: 33px;
     color: @color-black;
     background-color: transparent;
     text-align: left;
@@ -26,12 +35,17 @@
       top: -200px;
       right: 0;
       bottom: 0;
-      left: 50%;
+      left: 50.2%;
       z-index: -2;
       background-color: @color-primary-800;
-      background-position: -1px 100%;
+      background-position: 0 100%;
       background-repeat: no-repeat;
       background-image: url("../img/background/promo_desktop_background.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-size: auto 696px;
+        background-image: url("../img/background/promo_desktop_background@2x.jpg");
+      }
     }
   }
 }
@@ -39,11 +53,11 @@
 .promo__container {
   @media (min-width: @breakpoint-medium) {
     position: relative;
-    padding: 0 90px 526px;
+    padding: 0 90px 526px 87px;
   }
 
   @media (min-width: @breakpoint-large) {
-    min-height: 582px;
+    min-height: 491px;
     padding: 20px 610px 95px 80px;
   }
 }
@@ -70,8 +84,14 @@
   text-transform: uppercase;
 
   @media (min-width: @breakpoint-medium) {
+    padding-left: 2px;
     margin-bottom: 49px;
     font-size: 20px;
+  }
+
+  @media (min-width: @breakpoint-large) {
+    padding-left: 0;
+    margin-bottom: 51px;
   }
 }
 
@@ -88,8 +108,8 @@
   }
 
   @media (min-width: @breakpoint-large) {
-    top: 30px;
-    left: calc(50% - 162px);
+    top: -62px;
+    left: calc(50% - 159px);
     width: 552px;
     height: 499px;
   }
@@ -101,5 +121,9 @@
   @media (min-width: @breakpoint-medium) {
     width: auto;
     justify-self: start;
+  }
+
+  @media (min-width: @breakpoint-large) {
+    min-width: 245px;
   }
 }
